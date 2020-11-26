@@ -51,26 +51,23 @@ body {
   margin-left: 50px;
 }
 
+ 
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 .btn {
   border: none;
   color: #ffffff;
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: #ffbbbb;
-}  
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
   
 
@@ -89,7 +86,7 @@ body {
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
   <img src="webdev.gif" alt="nevermiss" class="center">
-  <img src="heard.gif" alt="nevermiss" class="center">
+  <img src="heard.gif" alt="heard" class="center">
   <button class="btn"><i class="fa fa-home"></i> Home</button>
 </div>
 
